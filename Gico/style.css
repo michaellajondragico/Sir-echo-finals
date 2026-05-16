@@ -116,3 +116,110 @@ nav {
   color: var(--text);
   padding: .4rem;
 }
+
+/* ── HERO ── */
+main {
+  padding-top: var(--nav-h);
+}
+
+.hero {
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem 3rem;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 0%, rgba(201,169,110,.18) 0%, transparent 70%),
+    var(--bg);
+}
+
+.hero-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid var(--surface);
+  box-shadow: 0 8px 32px rgba(46,64,87,.15), 0 0 0 6px rgba(201,169,110,.2);
+  margin-bottom: 1.5rem;
+  background: var(--bg2);
+  overflow: hidden;
+  animation: fadeDown .7s ease both;
+  flex-shrink: 0;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-role {
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: .75rem;
+  animation: fadeUp .6s .1s ease both;
+}
+
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  margin-bottom: 1rem;
+  animation: fadeUp .7s .15s ease both;
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-weight: 300;
+  max-width: 420px;
+  line-height: 1.65;
+  animation: fadeUp .7s .25s ease both;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeUp .7s .35s ease both;
+}
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .75rem 1.75rem;
+  border-radius: 50px;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: transform .18s, box-shadow .18s;
+}
+
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+}
+
+.btn-full { width: 100%; justify-content: center; }
