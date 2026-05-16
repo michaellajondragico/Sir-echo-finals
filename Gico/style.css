@@ -223,3 +223,95 @@ main {
 }
 
 .btn-full { width: 100%; justify-content: center; }
+
+/* ── SECTION LAYOUT ── */
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* ── SECTION CARD ── */
+.section-card {
+  background: var(--surface);
+  border-radius: var(--card-radius);
+  padding: 2.5rem 2.5rem;
+  box-shadow: var(--card-shadow);
+  border: 1px solid rgba(0,0,0,.05);
+}
+
+.section-card h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-card h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--accent2);
+  margin-top: .4rem;
+  border-radius: 2px;
+}
+
+/* ── ABOUT ── */
+.about-text {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.about-text strong { color: var(--text); }
+
+.skills-section h3 {
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+  margin-bottom: .85rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .4rem .9rem;
+  border-radius: 50px;
+  background: var(--bg2);
+  color: var(--accent);
+  font-size: .82rem;
+  font-weight: 600;
+  border: 1px solid rgba(46,64,87,.1);
+  transition: background .18s, transform .18s;
+}
+
+.skill-tag:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.skill-tag i { font-size: .85rem; }
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: .82rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(0,0,0,.07);
+}
